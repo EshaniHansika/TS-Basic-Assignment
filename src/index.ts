@@ -1,5 +1,6 @@
 // *** Ignore the following lines ***
 import chalk from "chalk";
+import { readlink } from "fs";
 import prompt from "prompt-sync";
 // *** Ignore the above lines ***
 
@@ -32,8 +33,10 @@ console.log(`b) Result =${oddnum1} ÷ ${evennum1} = ${Result}`);
 }
 
 function runExerciseFour() {
-  const radius = prompt("radius");
+  const r= readLine(" radius   ");
   const pi = Math.PI;
+  const area = pi * Math.pow(r, 2);
+  console.log(` Area = ${area}`);
 
 }
 
