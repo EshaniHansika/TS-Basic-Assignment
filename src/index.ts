@@ -40,16 +40,24 @@ function runExerciseFour() {
 }
 
 function runExerciseFive() {
-let n1 = readLine("Number  ");
-let n2 = readLine("Number  ");
+let n1 = readLine(" Number  ");
+let n2 = readLine(" Number  ");
 if(Math.abs(n2 - n1) == 1){
-    console.log("This are Consecutive Number");
+    console.log(" This are Consecutive Number");
 }
 else 
-    console.log("This are not Consecutive Number");
+    console.log(" This are not Consecutive Number");
 }
 
-function runExerciseSix() {}
+function runExerciseSix() {
+  const N1 = readLine(" positive integer Number ");
+  if(N1 %2 == 0){
+    console.log(` ${N1} is a Even Number`);
+  }
+  else 
+  console.log(` ${N1} is a Odd Number`);
+
+}
 
 function runExerciseSeven() {}
 
