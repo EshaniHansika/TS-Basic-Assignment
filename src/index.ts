@@ -7,7 +7,10 @@ import prompt from "prompt-sync";
 const readLine = prompt({ sigint: true });
 
 function runExerciseOne() {
-  console.log("Write your own code for this method.");
+  const firstName = "Eshani";
+  const lastName = "Hansika"; 
+  console.log(`Hello ${firstName} ${lastName} ! I am glad to inform you that ypu are the test subject of my first assignment! `);
+
 }
 
 function runExerciseTwo() {}
