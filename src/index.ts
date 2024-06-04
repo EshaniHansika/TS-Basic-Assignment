@@ -19,7 +19,17 @@ function runExerciseTwo() {
   console.log(`Hello ${FirstName} ${LastName}! Have a nice day! `);
 }
 
-function runExerciseThree() {}
+function runExerciseThree() {
+  const num1= 45;
+  const num2 = 53;
+  const Sum = num1 + num2;
+  console.log(`a) Sum = ${num1} + ${num2} = ${Sum} \n`);
+
+  const evennum1 = 6;
+  const oddnum1 = 15;
+  const Result = oddnum1 / evennum1;
+console.log(`b) Result =${oddnum1} ÷ ${evennum1} = ${Result}`);
+}
 
 function runExerciseFour() {}
 
