@@ -37,10 +37,17 @@ function runExerciseFour() {
   const pi = Math.PI;
   const area = pi * Math.pow(r, 2);
   console.log(` Area = ${area}`);
-
 }
 
-function runExerciseFive() {}
+function runExerciseFive() {
+let n1 = readLine("Number  ");
+let n2 = readLine("Number  ");
+if(Math.abs(n2 - n1) == 1){
+    console.log("This are Consecutive Number");
+}
+else 
+    console.log("This are not Consecutive Number");
+}
 
 function runExerciseSix() {}
 
