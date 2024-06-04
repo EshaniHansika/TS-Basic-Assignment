@@ -13,7 +13,11 @@ function runExerciseOne() {
 
 }
 
-function runExerciseTwo() {}
+function runExerciseTwo() {
+  const FirstName = "Eshani";
+  const LastName = "Hansika"; 
+  console.log(`Hello ${FirstName} ${LastName}! Have a nice day! `);
+}
 
 function runExerciseThree() {}
 
