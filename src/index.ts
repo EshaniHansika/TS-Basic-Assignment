@@ -20,18 +20,22 @@ function runExerciseTwo() {
 }
 
 function runExerciseThree() {
-  const num1= 45;
-  const num2 = 53;
+  const num1= Number(readLine("   Number  "));
+  const num2 = Number(readLine("  Number  "));
   const Sum = num1 + num2;
   console.log(`a) Sum = ${num1} + ${num2} = ${Sum} \n`);
 
-  const evennum1 = 6;
-  const oddnum1 = 15;
+  const evennum1 = Number(readLine("  Even Number  "));
+  const oddnum1 = Number(readLine("   odd Number  "));
   const Result = oddnum1 / evennum1;
 console.log(`b) Result =${oddnum1} ÷ ${evennum1} = ${Result}`);
 }
 
-function runExerciseFour() {}
+function runExerciseFour() {
+  const radius = prompt("radius");
+  const pi = Math.PI;
+
+}
 
 function runExerciseFive() {}
 
