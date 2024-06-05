@@ -68,7 +68,24 @@ function runExerciseSeven() {
   console.log(` She or He Hasn't a fever`);
 }
 
-function runExerciseEight() {}
+function runExerciseEight() {
+  const Num1 = Number(readLine("  Marks: "));
+  if(Num1>=90){
+    console.log(` Grade: A`);
+  }
+  else if(Num1>=75){
+    console.log(` Grade: B`);
+  }
+  else if(Num1>=60){
+    console.log(` Grade: C`); 
+  }
+  else if(Num1>=40){
+    console.log(` Grade: D`);
+  }
+  else     
+  console.log(` Grade: E`);
+
+}
 
 function runExerciseNine() {}
 
