@@ -91,6 +91,43 @@ function runExerciseNine() {}
 
 function runExerciseTen() {}
 
+function runExerciseEleven() {
+  const number1 = Number(readLine("  Number "));
+  const number2 =Number(readLine("  Number "));
+  let op = readLine(" + , - , * , / : ");
+  if( op == "+"){
+    let Result = number1 + number2;
+    console.log(` Result = ${number1} + ${number2} = ${Result}`);
+  }
+  else if( op == "-"){
+    let Result = number1 - number2;
+    console.log(` Result = ${number1} - ${number2} = ${Result}`);
+  }
+  else if( op == "*"){
+    let Result = number1 * number2;
+    console.log(` Result = ${number1} * ${number2} = ${Result}`);
+  }
+  else if( op == "/"){
+    let Result = number1 / number2;
+    console.log(` Result = ${number1} / ${number2} = ${Result}`);
+  }
+  else
+  console.log(` Wrong Options`)
+
+}
+
+function runExerciseTwelve() {}
+
+function runExerciseThirteen() {}
+
+function runExercisefourteen() {}
+
+function runExerciseFifteen() {}
+
+function runExerciseSixteen() {}
+
+function runExerciseSeventeen() {}
+
 /* ^^^^^^^^^^^^  Add the rest of the exercise functions above this line ^^^^^^^^^^^^ */
 
 let keepAlive = true;
@@ -132,7 +169,28 @@ while (keepAlive) {
       case 10:
         runExerciseTen();
         break;
-
+      case 11:
+        runExerciseEleven();
+        break;
+      case 12:
+        runExerciseTwelve();
+        break;
+      case 13:
+        runExerciseThirteen();
+        break;
+      case 14:
+        runExercisefourteen();
+        break;
+      case 15:
+        runExerciseFifteen();
+        break;
+      case 16:
+        runExerciseSixteen();
+        break;
+      case 17:
+        runExerciseSeventeen();
+        break;
+        
       /* ^^^^^^^^^^^^  Add the rest of the exercises above this line ^^^^^^^^^^^^ */
       case -1:
         keepAlive = false;
