@@ -33,15 +33,15 @@ console.log(`b) Result =${oddnum1} ÷ ${evennum1} = ${Result}`);
 }
 
 function runExerciseFour() {
-  const r= readLine(" radius   ");
+  const r= Number(readLine(" radius   "));
   const pi = Math.PI;
   const area = pi * Math.pow(r, 2);
   console.log(` Area = ${area}`);
 }
 
 function runExerciseFive() {
-let n1 = readLine(" Number  ");
-let n2 = readLine(" Number  ");
+let n1 = Number(readLine(" Number  "));
+let n2 = Number(readLine(" Number  "));
 if(Math.abs(n2 - n1) == 1){
     console.log(" This are Consecutive Number");
 }
@@ -50,7 +50,7 @@ else
 }
 
 function runExerciseSix() {
-  const N1 = readLine(" positive integer Number ");
+  const N1 = Number(readLine(" positive integer Number "));
   if(N1 %2 == 0){
     console.log(` ${N1} is a Even Number`);
   }
@@ -59,7 +59,14 @@ function runExerciseSix() {
 
 }
 
-function runExerciseSeven() {}
+function runExerciseSeven() {
+  const T1 = Number(readLine(" Body Temperature in Celsius: "));
+  if(T1>=38){
+    console.log(` She or He Has a fever`);
+  }
+  else
+  console.log(` She or He Hasn't a fever`);
+}
 
 function runExerciseEight() {}
 
