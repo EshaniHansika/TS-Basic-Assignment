@@ -116,8 +116,53 @@ function runExerciseEleven() {
 
 }
 
-function runExerciseTwelve() {}
+function runExerciseTwelve() {
 
+  const Num = Number(readLine(" End Number: "))
+  if (Num>=100){
+    return;
+  }
+
+  console.log(" Using for loop:");
+  console.log(" Ascending order:");
+  for (let i=1; i<=Num; i++){
+    console.log(  i);
+  }
+
+  console.log(" Descending order:");
+  for (let i = Num; i >= 1; i--) {
+    console.log(  i);
+}
+
+console.log(" Using for while:");
+console.log(" Ascending order:");
+let i=1;
+while(i<=Num){
+  console.log(  i);
+    i ++;
+}
+
+console.log(" Descending order:");
+i=Num;
+while(i>=1){
+  console.log(  i);
+    i --;
+}
+console.log("Using do-while loop:");
+  console.log("Ascending order:");
+  i = 1;
+  do {
+    console.log(i);
+    i++;
+  } while (i <= Num);
+
+  console.log("Descending order:");
+  i = Num;
+  do {
+    console.log(i);
+    i--;
+  } while (i >= 1);
+}
 function runExerciseThirteen() {}
 
 function runExercisefourteen() {}
