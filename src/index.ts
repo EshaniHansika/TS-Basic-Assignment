@@ -35,8 +35,10 @@ console.log(`b) Result =${oddnum1} ÷ ${evennum1} = ${Result}`);
 function runExerciseFour() {
   const r= Number(readLine(" radius   "));
   const pi = Math.PI;
-  const area = pi * Math.pow(r, 2);
-  console.log(` Area = ${area}`);
+  const areaofcircle = pi * Math.pow(r, 2);
+  console.log(` Area of a Cirule= ${areaofcircle}`);
+  const areaofsphere = 4 * pi * Math.pow(r, 2);
+  console.log(` Area of a Sphere= ${areaofsphere}`);
 }
 
 function runExerciseFive() {
@@ -163,8 +165,25 @@ console.log("Using do-while loop:");
     i--;
   } while (i >= 1);
 }
-function runExerciseThirteen() {}
+function runExerciseThirteen() {
+const SecretNumber = Math.floor(Math.random() * 10) + 1;
 
+while(true){
+  console.log("Give the Number from 1 to 10 ")
+  const guessnum = Number(readLine("  Number "));
+
+  if( guessnum > SecretNumber){
+  console.log(`It's wrong number. That number is less than your guess number. try again `);
+}
+else if( guessnum < SecretNumber){
+  console.log(`It's wrong number. That number is greater than your guess number. try again `);
+}
+else{
+console.log( `  It's correct! The Secret Number is ${SecretNumber}.`  ) 
+  break;
+}
+}
+}
 function runExercisefourteen() {}
 
 function runExerciseFifteen() {}
