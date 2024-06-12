@@ -166,31 +166,57 @@ console.log("Using do-while loop:");
   } while (i >= 1);
 }
 function runExerciseThirteen() {
-const SecretNumber = Math.floor(Math.random() * 10) + 1;
+  const SecretNumber = Math.floor(Math.random() * 10) + 1;
 
-while(true){
-  console.log("Give the Number from 1 to 10 ")
-  const guessnum = Number(readLine("  Number "));
+  while(true){
+    console.log("Give the Number from 1 to 10 ")
+    const guessnum = Number(readLine("  Number "));
 
-  if( guessnum > SecretNumber){
-  console.log(`It's wrong number. That number is less than your guess number. try again `);
+    if( guessnum > SecretNumber){
+     console.log(`It's wrong number. That number is less than your guess number. try again `); 
+    }
+    else if( guessnum < SecretNumber){
+      console.log(`It's wrong number. That number is greater than your guess number. try again `);
+    }
+    else{
+      console.log( `  It's correct! The Secret Number is ${SecretNumber}.`  ) 
+      break;
+    }
+  }
 }
-else if( guessnum < SecretNumber){
-  console.log(`It's wrong number. That number is greater than your guess number. try again `);
+
+function runExercisefourteen() {
+
+for (let i = 1; i <= 10; i++) {
+    let row = '';
+    for (let j = 1; j <= 10; j++) {
+      row += `${(i * j).toString().padStart(4, ' ')} `;
+    }
+    console.log(row);
+  }
 }
-else{
-console.log( `  It's correct! The Secret Number is ${SecretNumber}.`  ) 
-  break;
-}
-}
-}
-function runExercisefourteen() {}
+
 
 function runExerciseFifteen() {}
 
-function runExerciseSixteen() {}
+function runExerciseSixteen() {
+  let num = Number(readLine("Number "));
+  let sum = num ;
+  let count = 0;
 
-function runExerciseSeventeen() {}
+  while(num !== 0){
+    num = Number(readLine("Number "));
+     sum += num;
+     count ++  
+  }
+  let Averge = sum/count;
+  
+  console.log(`Sum = ${sum}`);
+  console.log(`Averge = ${Averge}`);
+}
+
+  
+  function runExerciseSeventeen() {}
 
 /* ^^^^^^^^^^^^  Add the rest of the exercise functions above this line ^^^^^^^^^^^^ */
 
