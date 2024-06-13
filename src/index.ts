@@ -197,7 +197,21 @@ for (let i = 1; i <= 10; i++) {
 }
 
 
-function runExerciseFifteen() {}
+function runExerciseFifteen() {
+  let pattern = "";
+
+  for (let i = 5; i >= 1; i--) {
+    pattern = "";
+    for (let j = 1; j <= 5 - i; j++) {
+      pattern += " ";
+    }
+
+    for (let k = 0; k < 2 * i - 1; k++) {
+      pattern += "*";
+    }
+     console.log(pattern);
+  }
+}
 
 function runExerciseSixteen() {
   let num = Number(readLine(" Number "));
@@ -221,13 +235,13 @@ function runExerciseSixteen() {
     let a = 0;
     let b = 1;
 
-    //for (let i=1; i<=EnteredNum; i++){
+    for (let i=1; i<=EnteredNum; i++){
       console.log(a);
       
       let nextterm = a + b;
       a = b;
       b = nextterm;
-   // }
+    }
   }
 
 /* ^^^^^^^^^^^^  Add the rest of the exercise functions above this line ^^^^^^^^^^^^ */
