@@ -200,23 +200,35 @@ for (let i = 1; i <= 10; i++) {
 function runExerciseFifteen() {}
 
 function runExerciseSixteen() {
-  let num = Number(readLine("Number "));
+  let num = Number(readLine(" Number "));
   let sum = num ;
   let count = 0;
 
   while(num !== 0){
-    num = Number(readLine("Number "));
+    num = Number(readLine(" Number "));
      sum += num;
      count ++  
   }
   let Averge = sum/count;
   
-  console.log(`Sum = ${sum}`);
-  console.log(`Averge = ${Averge}`);
+  console.log(`   Sum = ${sum}`);
+  console.log(`   Averge = ${Averge}`);
 }
 
   
-  function runExerciseSeventeen() {}
+  function runExerciseSeventeen() {
+    let EnteredNum = Number(readLine(" Enter the number of value for the Fibonacci series: " ));
+    let a = 0;
+    let b = 1;
+
+    //for (let i=1; i<=EnteredNum; i++){
+      console.log(a);
+      
+      let nextterm = a + b;
+      a = b;
+      b = nextterm;
+   // }
+  }
 
 /* ^^^^^^^^^^^^  Add the rest of the exercise functions above this line ^^^^^^^^^^^^ */
 
