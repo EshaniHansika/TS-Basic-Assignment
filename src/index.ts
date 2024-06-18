@@ -71,27 +71,107 @@ function runExerciseSeven() {
 }
 
 function runExerciseEight() {
-  const Num1 = Number(readLine("  Marks: "));
-  if(Num1>=90){
-    console.log(` Grade: A`);
+  const Grade:string = (readLine("  Please Enter your Grade(A, B, C, D, E): ")).toUpperCase();
+  
+  switch (Grade){
+    case "A":
+      console.log(" Excellent work! You've achieved the highest grade.");
+      break;
+    case "B":
+      console.log(" Great job! You've done very well.");
+      break;
+    case "C":
+      console.log(" Good effort! You've passed.");
+      break;
+    case "D":
+      console.log( "  You passed, but there's room for improvement.");
+      break;
+    case "E":
+      console.log(" You need to work harder to pass next time.");
+      break
+    default:
+      console.log(" Invalid grade entered. Please enter a grade between A, B, C, D, E");
+        break;
   }
-  else if(Num1>=75){
-    console.log(` Grade: B`);
-  }
-  else if(Num1>=60){
-    console.log(` Grade: C`); 
-  }
-  else if(Num1>=40){
-    console.log(` Grade: D`);
-  }
-  else     
-  console.log(` Grade: E`);
 
 }
 
-function runExerciseNine() {}
+function runExerciseNine() {
+  function isPalindrome(str) {
+    const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+    return cleanedStr == cleanedStr.split('').reverse().join('');
+  }
 
-function runExerciseTen() {}
+  const inputElement = readLine( "InputElement -  ")
+  const result = isPalindrome(inputElement);
+
+  if (result) {
+    console.log(`"${inputElement}" is a palindrome.`);
+  } else {
+    console.log(`"${inputElement}" is not a palindrome.`);
+  }
+}
+
+
+function runExerciseTen(){
+// A)
+  console.log("A)");
+
+  const text = "The quick fox jumped Over the Dog ";
+  const newtext = text.replace("quick", "brown").replace("Dog","lazy dog");
+  console.log(`Original Text: ${text}`);
+  console.log(`Modified Text: ${newtext}`);
+
+// B)
+  console.log("B)");
+   const Word1 = readLine( "Enter first word: " ).toUpperCase();
+   const Word2 = readLine( "Enter second word: " ).toUpperCase();
+
+   if( Word1 == Word2){
+    console.log("Both are Same Words")
+   }
+   else{
+    console.log("Both are not Same Words")
+   }
+
+// C)
+  console.log("C)");
+   const inputword = "Donkey";
+   const displayword = inputword.replace("Donkey","Monkey")
+   console.log(displayword);
+
+// D)
+  console.log("D)");
+ 
+   const paragraph = "I am going to visit kolmarden zoo tommorrow. I am a big fan of the doiphin show. I may watch all dolphin shows during the day. I would like to take a gondola safari as well. I wish to visit Bamse and his team there .";
+   const newparagraph = text.replace("I", "We").replace("am","are");
+   console.log(`Original paragraph: ${paragraph}`);
+   console.log(`Modified paragraph: ${newparagraph}`);
+ 
+// E)
+  console.log("E)");
+ 
+   const ActualString = "She is the popular singer";
+   const ExpectedSring = ActualString.replace("popular", "most popular");
+   console.log(`Actual String: ${ActualString}`);
+   console.log(`Expected Sring: ${ExpectedSring}`);   
+
+// F)
+  console.log("F)");
+ 
+    const actualString = "A friend is the asset of your life";
+    const expectedSring = actualString.replace("friend", "true friend").replace("asset","greastest asset");
+    console.log(`Actual String: ${actualString}`);
+    console.log(`Expected Sring: ${expectedSring}`);  
+
+// G)
+  console.log("F)");
+ 
+    const actual = "My name is Eshani Hansika";
+    const expected =
+    console.log(`Actual String: ${actualString}`);
+    console.log(`Expected Sring: ${expectedSring}`);  
+}
 
 function runExerciseEleven() {
   const number1 = Number(readLine("  Number "));
