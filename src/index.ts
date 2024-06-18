@@ -26,14 +26,16 @@ function runExerciseThree() {
   const Sum = num1 + num2;
   console.log(`a) Sum = ${num1} + ${num2} = ${Sum} \n`);
 
-  const evennum1 = Number(readLine("  Even Number  "));
-  const oddnum1 = Number(readLine("   odd Number  "));
+  const evennum1 = Number(readLine("  Enter the Even Number  "));
+  const oddnum1 = Number(readLine("   Enter the odd Number  "));
   const Result = oddnum1 / evennum1;
 console.log(`b) Result =${oddnum1} ÷ ${evennum1} = ${Result}`);
 }
 
 function runExerciseFour() {
-  const r= Number(readLine(" radius   "));
+  console.log(`Calculate the Area & Sphere of a Circule`);
+  
+  const r= Number(readLine("Enter a value for the radius:   "));
   const pi = Math.PI;
   const areaofcircle = pi * Math.pow(r, 2);
   console.log(` Area of a Cirule= ${areaofcircle}`);
@@ -42,6 +44,8 @@ function runExerciseFour() {
 }
 
 function runExerciseFive() {
+console.log(`Chechking the Consecutive Number`);
+
 let n1 = Number(readLine(" Number  "));
 let n2 = Number(readLine(" Number  "));
 if(Math.abs(n2 - n1) == 1){
@@ -52,6 +56,8 @@ else
 }
 
 function runExerciseSix() {
+console.log(`Chechking the Even or Odd number`);
+ 
   const N1 = Number(readLine(" positive integer Number "));
   if(N1 %2 == 0){
     console.log(` ${N1} is a Even Number`);
@@ -62,6 +68,8 @@ function runExerciseSix() {
 }
 
 function runExerciseSeven() {
+console.log(`Chechking the Body Temperature`);
+
   const T1 = Number(readLine(" Body Temperature in Celsius: "));
   if(T1>=38){
     console.log(` She or He Has a fever`);
@@ -117,8 +125,8 @@ function runExerciseTen(){
 // A)
   console.log("A)");
 
-  const text = "The quick fox jumped Over the Dog ";
-  const newtext = text.replace("quick", "brown").replace("Dog","lazy dog");
+  const text = "The quick fox jumped Over the DOG ";
+  const newtext = text.replace("quick", "brown").replace("Over", "over").replace("DOG","lazy dog");
   console.log(`Original Text: ${text}`);
   console.log(`Modified Text: ${newtext}`);
 
@@ -165,37 +173,44 @@ function runExerciseTen(){
     console.log(`Expected Sring: ${expectedSring}`);  
 
 // G)
-  console.log("F)");
+  console.log("G)");
  
     const actual = "My name is Eshani Hansika";
-    const expected =
-    console.log(`Actual String: ${actualString}`);
-    console.log(`Expected Sring: ${expectedSring}`);  
+    const expected =actual.replace(actual,"Eshani Hansika")
+    console.log(`Actual String: ${actual}`);
+    console.log(`Expected Sring: ${expected}`);  
+// G)
+console.log("G)");
+ 
+const Actual = "My name is Eshani Hansika";
+const Expected =Actual.replace(Actual,"Eshani Hansika")
+console.log(`Actual String: ${Actual}`);
+console.log(`Expected Sring: ${Expected}`);  
+
 }
 
 function runExerciseEleven() {
   const number1 = Number(readLine("  Number "));
   const number2 =Number(readLine("  Number "));
-  let op = readLine(" + , - , * , / : ");
-  if( op == "+"){
-    let Result = number1 + number2;
-    console.log(` Result = ${number1} + ${number2} = ${Result}`);
+  let operator = readLine(" + , - , * , / : ");
+  switch (operator) {
+    case "+":
+      console.log(`Result: ${number1} + ${number2} = ${number1 + number2}`);
+      break;
+    case "-":
+      console.log(`Result: ${number1} - ${number2} = ${number1 - number2}`);
+      break;
+    case "-":
+      console.log(`Result: ${number1} * ${number2} = ${number1 * number2}`);
+      break;
+    case "/":
+      console.log(`Result: ${number1} / ${number2} = ${number1 / number2}`);
+      break;
+  
+    default:
+      console.log(` Wrong Options`)
+      break;
   }
-  else if( op == "-"){
-    let Result = number1 - number2;
-    console.log(` Result = ${number1} - ${number2} = ${Result}`);
-  }
-  else if( op == "*"){
-    let Result = number1 * number2;
-    console.log(` Result = ${number1} * ${number2} = ${Result}`);
-  }
-  else if( op == "/"){
-    let Result = number1 / number2;
-    console.log(` Result = ${number1} / ${number2} = ${Result}`);
-  }
-  else
-  console.log(` Wrong Options`)
-
 }
 
 function runExerciseTwelve() {
